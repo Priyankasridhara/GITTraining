@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login </title>
+
+  <link rel="stylesheet" type="text/css" href="C:\Users\vadhi\Desktop\websiteeeeeee\case_study\css\login_css.CSS">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+        <h1>ABC Company</h1>
+    <div class="frm">
+        <h2>Employee Login Portal</h2>
+        <form name="login">
+            Username : <input type="text" name="userid" placeholder="Username" /><br><br>
+            Password : <input type="password" name="pswrd" placeholder="********" /><br><br>
+            <input type="button" onclick="check(this.form)" value="Login" id="login-button" />
+            <input type="reset" value="Cancel" id="rst-button" />
+        </form>
+</div>
+
+
+
+
+        <script language="javascript">
+            function check(form) { 
+                if(form.userid.value == "admin" && form.pswrd.value == "admin") {
+                    window.open("index.html","_self")
+                }
+                else {
+                    alert("Error Password or Username")
+                }
+            }
+        </script>
+    </body>
+</html>

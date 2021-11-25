@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Admin Dashboard</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<link rel="stylesheet" type="text/css" href="C:\Users\vadhi\Desktop\websiteeeeeee\case_study\css\index.CSS">
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>ABC Technologies<br>Admin Task Control room</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#monitor" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Monitor Task</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a>  
+    <a href="#create" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Create Task</a> 
+    <a href="#checkp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Check progress</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Support</a>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>ABC Technologies Admin Task Control room</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>ABC Technologies</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Welcome to Admin Dashboard!</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  <p>Greetings Admin,</p>
+  <p>Welcome to ABC Technologies task control panel. Here Tasks can be Viewed, Created and Monitored.</p>
+  <p> Let's Get Started!!</p>
+<br>
+<br>
+<br>
+
+ 
+  
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  <div class="w3-container" id="monitor" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Monitor Task</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+  </div>
+
+    <div class="w3-container" id="team" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Team</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+<div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://icon-library.com/images/user-image-icon/user-image-icon-28.jpg" alt="John" style="width:50%">
+        <div class="w3-container">
+          <h3>John</h3>
+          <p class="w3-opacity">Intern</p>
+          <p>Does front-end related Tasks. Works productively</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmiIgUwxHHndoL0nV7VcMjWBCanchsyFP9lA&usqp=CAUg" alt="Jane" style="width:50%">
+        <div class="w3-container">
+          <h3>Jane</h3>
+          <p class="w3-opacity">Developer 1</p>
+          <p>Full stack developer. Can complete tasks efficiently</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://png.pngtree.com/png-vector/20190501/ourmid/pngtree-users-icon-design-png-image_1014936.jpg" alt="Mike" style="width:50%">
+        <div class="w3-container">
+          <h3>Mike</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>Designs and assists the team eith effective solutions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  <div class="w3-container" id="create" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Create Task</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+ <form id="frm1">
+        <div class="container"> 
+          <div class="split left">
+  
+            <label>Activity ID: </label> 
+            <input type="text" placeholder="Enter Activity ID" name="activity ID" required>
+            <br>
+            <br>
+            <label>Activity Name : </label> 
+
+            <input type="text" placeholder="Enter Activity Name" name="Activity name" required>
+             <br>
+            <br>
+            <label>Activity Owner : </label> 
+<select name="owners">
+  <option value="default">Select An owner</option>
+  <option value="Priyanka">Priyanka</option>
+  <option value="Supriya">Supriya</option>
+  <option value="Ramesh">Ramesh</option>
+  <option value="Harish">Harish</option>
+</select>
+             <br>
+            <br>
+            <label>Description of the Activity : </label> 
+             <br>
+            <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Enter Activity Name" name="Description of activity"></textarea>
+            <br>
+            <br>
+              <label>Priority :</label> 
+              <select name="owners">
+  <option value="default">Select Priotity</option>
+  <option value="Tim" type="color">Low</option>
+  <option value="John">Urgent</option>
+  <option value="Ramesh">Highly Important</option>
+            </select>
+            <br>
+            <br>
+          </div>
+      
+
+<div class="split right">
+ 
+            <label>Activity Start Date: </label> 
+
+            <input type="date" placeholder="Enter Activity Name" name="Activity name" required>
+
+            <label>   Activity End Date: </label> 
+            <input type="date" placeholder="Enter Activity Name" name="Activity name" required>
+             <br>
+            <br>
+<label>Activity status : </label> 
+
+  <select name="status">
+  <option value="default">Select Progress</option>
+  <option value="Priyanka" type="color">Yet to start</option>
+  <option value="Supriya">In Progress</option>
+  <option value="Ramesh">Completed</option>
+ </select>
+<br>
+<br>
+<label>Assign to : </label> 
+
+  <select name="status">
+  <option value="default">Select from the team</option>
+  <option value="john" type="color">John</option>
+  <option value="jane">Jane</option>
+  <option value="mike">Mike</option>
+ </select>
+ <br>
+<br>
+<label>Last Modified on:  </label> 
+
+            <input type="date" placeholder="Enter Activity Name" name="Activity name" required>
+            <br>
+            <br>
+             <div align="centered"> 
+            <input type="button" onclick="myFunction()" value="submit" id="login-button" />
+            <input type="radio" name="rad" checked="checked"> Update 
+            <input type="radio" name="rad" >New 
+            <br>
+            <br>
+            <input type="reset" value="Cancel" id="rst-button" /> 
+           </div> 
+        </div>
+
+
+ <br>
+<br>
+         
+    </div>
+  
+
+    </form> 
+  </div>
+
+
+  
+  <div class="w3-container" id="checkp" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Check progress </b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Here the progress of the tasks can be checked</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">In Progres</li>
+        <li class="w3-padding-16" id="demo"></li>
+      
+     
+
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Completed</li>
+        <li class="w3-padding-16"></li>
+        <li class="w3-padding-16"></li>
+        <li class="w3-padding-16"></li>
+        <li class="w3-padding-16"></li>
+        <li class="w3-padding-16"></li>
+        <li class="w3-padding-16"></li>
+
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Need help in managing the website? Fill out the form and fill us in with the details. We will get back to you soon!</p>
+    <form action="#" target="_blank"><!--enter email here-->
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Email</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Made by:<a href="#" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></p>Priyanka.S</div><!--enter email in the href-->
+<script type="text/javascript" src="/js/todo.js"></script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("frm1");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+</body>
+</html>
