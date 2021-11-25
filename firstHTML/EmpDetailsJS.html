@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML>  
+<html>  
+    <body>  
+        <form method="post">  
+    First Name  
+            <input type="text" id="name" name="fname"/>  
+            </br>
+    Employee ID  
+            <input type="number" name="EMpID"/>  
+            </br>
+            DOB
+            <input type="Date" name="DOB"/>
+            </br>
+      Mobile No
+      <input type="number" name="Mobile No"/> 
+      </br>
+      Address
+      <input type="text" name="Address"/> 
+      </br>
+      Course
+      <p>
+      <input type="checkbox" id="BE" name="i">BTech
+      </br>
+      <input type="checkbox" id="Bcom" name="b">Bcom
+      </br>
+      <input type="checkbox" id="PU" name="m">PU
+      </p>
+      <button type="button" onclick="myfunction()" id="1" >Apply</button>
+Stream
+<script>
+function validateEmail(){
+var emailID = document.myForm..value; atpos =emailID.indexOf("@");
+dotpos =emailID.lastIndexOf(".");
+if (atpos < 1 || ( dotpos -atpos < 2 )){
+alert("Please enter correct email ID"); document.myForm.EMail.focus() ; return false; } return( true );}
+  
+  let x = document.getElementById("PU").value;
+  try {
+  document.write(“Try block begins” + “<br>”);
+    if(x == "") throw "empty";
+    }catch(err) {
+  document.write(“Exception caught” + “<br>”);
+  document.write(“Error name: “ + err.name + “<br>”);
+  document.write(“Error message: “ + err.message + “<br>”);
+  }
+}finally{
+document.write(“Finally block reached!”);
+}
+function myfunction()
+{
+
+    if (document.getElementById("").checked)
+    {
+        document.write("Available course:<br> Comuter Science <br> Electrical <br> Electronics <br> Civil ");
+    }
+    else if(document.getElementById("Bcom").checked)
+    {
+        document.write("Available course:<br> English <br> Music <br> Fine Arts <br> Social Worker");
+    }
+    //else if(document.getElementById("PU").checked)
+    //{
+      //  document.write("Available course:<br> Computer Science <br> Physics <br> Chemistry <br> Biology");
+    }
+}
+
+</script>         
+ 
+
+        </form>  
+    </body>  
+</html> 

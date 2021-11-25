@@ -1,0 +1,40 @@
+﻿<html>
+<head>
+<title>FormValidation</title>
+<script type="text/javascript"> function validate(){
+if( document.myForm.Name.value == "" ){ alert( "Please provide your name!" ); document.myForm.Name.focus();
+}
+}
+returnfalse;
+</script>
+<script type="text/javascript">
+function validateEmail(){
+var emailID = document.myForm.EMail.value; atpos =emailID.indexOf("@");
+dotpos =emailID.lastIndexOf(".");
+if (atpos < 1 || ( dotpos -atpos < 2 )){
+alert("Please enter correct email ID"); document.myForm.EMail.focus() ; return false; } return( true );}
+</script>
+</head>
+<body>
+<form action="" name="myForm"onsubmit="return(validate());">
+<table cellspacing="2" cellpadding="2"border="1">
+<tr>
+<tdalign="right">Name</td>
+<td><input type="text" name="Name"/></td>
+</tr>
+</table>
+</form>
+</body></html>
+
+<!DOCTYPEhtml>
+<html>
+<body>
+<p>Click the button to do a global search for the numbers 1to 4 in a string.</p>
+<button onclick="myFunction()">Tryit</button>
+<pid="demo"></p>
+<script>
+function myFunction() { var str ="123456789";
+var patt1 =/[1-4]/g;
+var result = str.match(patt1); document.getElementById("demo").innerHTML =result;}
+</script> 
+</body></html>

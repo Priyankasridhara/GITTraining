@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<h3>Remove an HTML Element.</h3>
+
+<!--<div>
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph2.</p>
+  <p id="p3">This is another paragraph3.</p>
+  <p id="p4">This is another paragraph4.</p>
+  <p id="p5">This is another paragraph5.</p>
+
+</div>-->
+
+<div id="div1">
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
+  <p id="p3">This is another paragraph3.</p>
+  <p id="p4">This is another paragraph4.</p>
+</div>
+
+
+<button onclick="myFunction()">Remove Element</button>
+
+
+<script>
+const para = document.createElement("p");
+const node = document.createTextNode("This is Para1.");
+para.appendChild(node);
+const element = document.getElementById("div1");
+element.appendChild(para);
+
+const para1 = document.createElement("p1");
+const node1 = document.createTextNode("This is Para2.");
+para1.appendChild(node1);
+const element1 = document.getElementById("div1");
+element1.appendChild(para1);
+
+const para2 = document.createElement("p2");
+const node2 = document.createTextNode("This is Para3.");
+para2.appendChild(node2);
+const element2 = document.getElementById("div1");
+element2.appendChild(para2);
+
+const para3 = document.createElement("p3");
+const node3 = document.createTextNode("This is Para4.");
+para3.appendChild(node3);
+const element3 = document.getElementById("div1");
+element3.appendChild(para3);
+
+const para4 = document.createElement("p4");
+const node4 = document.createTextNode("This is Para5.");
+para4.appendChild(node4);
+const element4 = document.getElementById("div1");
+element4.appendChild(para4);
+
+function myFunction() {
+const elmnt = document.getElementById("p3"); elmnt.remove();
+const elmnt1 = document.getElementById("p4"); elmnt1.remove();
+}
+
+</script>
+
+
+</body>
+</html>

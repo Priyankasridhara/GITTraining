@@ -1,0 +1,83 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Fruit Mall</title>
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+<div align="center">
+<a href=""><img src="C:\Users\priyanka.sridhara\Desktop\fruit-shop.jpg" alt="Traditional fruit MAll" 
+ style="width:500px;height:200px"></a></br>
+ 
+ </div>
+ </br>
+ <h3 class="center">Available fruits</h3>
+ </br>
+ <a href="default.asp">
+  <img src="C:\Users\priyanka.sridhara\Desktop\apples.jpg" alt="Apple"class="center" >
+  <input  id="apple" type="button" onclick="User_Det()" value="Buy Apple" class="center" >
+  <form>
+   <input type="text" id="number" value="0"/>
+   <input type="button" onclick="incrementValue()" value="Increment Value" />
+</form>
+</a>
+</br>
+<a href="default.asp">
+  <img src="C:\Users\priyanka.sridhara\Desktop\pineapple.jpg" alt="PineApple" class="center">
+  <input id="pineapple" type="button" onclick="User_Det()" value="Buy Pineapple" class="center" >
+</a>
+</br>
+<a href="default.asp">
+  <img src="C:\Users\priyanka.sridhara\Desktop\grapes.jpg" alt="grapes" class="center" >
+  <input id="grapes"  type="button" onclick="Fruit_Det()" value="Buy grapes" class="center" >
+</a>
+
+
+
+<form>
+<label>Enter Your Name : </label>
+<input type="text" id="name" /><br /><br />
+<label>Enter Your empId : </label>
+<input type="email" id="email" /><br /><br />
+<label>Enter Your address : </label>
+<input type="address" id="address" /><br /><br />
+<label>Enter Your Mobile No : </label>
+<input type="text" id="mbno" /><br /><br />
+
+<option value=1 selected="true">SelectOne</option>
+<option value="B.Tech">1KG</option>
+<option value="MCA">2Kg</option>
+
+</select><br><br>
+
+
+
+<input type="button" onclick="User_Det()" value="submit" />
+</form>
+
+
+</head>
+<body>
+<script>
+function Fruit_Det() {
+        document.getElementById("apple").onclick = function() {myFunction()
+        document.getElementById("pineapple").addEventListener("click", myFunction);
+        document.getElementById("grapes").addEventListener("click", myFunction);
+        }
+        function myFunction( ) {
+        document.getElementById("apple").innerHTML = s;
+        document.getElementById("pineapple").innerHTML = s1;
+        document.getElementById("grapes").innerHTML = s2;
+
+        }
+
+ </script>
+
+</html>
