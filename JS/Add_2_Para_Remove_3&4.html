@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Add_2_Para_Remove_3&4</title>
+</head>
+<body>
+    <p id="para1">This is an Paragraph 1</p><br /><br />
+    <p id="para2">This is an Paragraph 2</p><br /><br />
+    <p id="para3">This is an Paragraph 3</p><br /><br />
+    <p id="para4">This is an Paragraph 4</p><br /><br />
+    <p id="para5">This is an Paragraph 5</p><br /><br />
+    <input type="button" onclick="myFunction()" value="Remove 3 And 4 paragraphs" />
+    <script>
+        function myFunction() {
+            var myobj1 = document.getElementById("para3");
+            myobj1.remove();
+            var myobj2 = document.getElementById("para4");
+            myobj2.remove()
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Opening New Window</title>
+    <script>
+        function showNews() {
+            news = window.open("", "NewsWindow", "width=900, height=700");
+            news.document.write("<p>The 'NewsWindow' will only appearing for 3 seconds.</p>");
+            tmot = setTimeout(function () { window.open('http://www.google.com', "NewsWindow") }, 2000);
+            tmot = setTimeout(function () { news.close() }, 5000);
+        }
+        showNews();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

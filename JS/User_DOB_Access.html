@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>User_Dob_Access</title>
+    <script>
+        function User_Dob() {
+            var dob = document.getElementById("mydate").value;
+            var day = dob.substr(8, dob.length);
+            var month = dob.substr(-5,2);
+            var year = dob.substr(-10,4);
+
+            document.write("She/He Was Born In : " + dob);
+            document.write("<br><br>She/He Was Born The Day is : " + day);
+            document.write("<br><br>She/He Was Born The Month is : " + month);
+            document.write("<br><br>She/He Was Born The Year is : " + year);
+            
+        }
+    </script>
+</head>
+<body>
+    <form style="text-align:center">
+        <br /><br /><label>Enter Your DOB : </label>
+        <input type="date" id="mydate" value=" " />
+        <p> ex:"2020-11-15 (y-m-d) " </p><br />
+        <input type="button" id="button" onclick="User_Dob()" value="submit" />
+    </form>
+</body>
+</html>

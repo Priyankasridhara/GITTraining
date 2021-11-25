@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Usr_Give_rows&coloums_Size</title>
+    <style>
+    </style>
+    <script>
+        function table() {
+            var table = '';
+            var rows = document.getElementById('rows').value;
+            var cols = document.getElementById('coloums').value;
+            for (var r = 1; r <= rows; r++) {
+                table += '<tr>';
+                for (var c = 1; c <= cols; c++) {
+                    if (r == 1) {
+                        table += '<th>' + " Heading " + '</th>';
+                    }
+                    else {
+                        table += '<td>' + c + "*" + r + " = " + r * c + '</td>';
+                    }
+                }
+                table += '</tr>';
+            }
+            document.write('<table border=1>' + table + '</table>');
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <lable>Enter Rows Size : </lable>
+        <input type="number" id="rows" value="rows" /><br /><br />
+        <lable>Enter Columns Size : </lable>
+        <input type="number" id="coloums" value="coloums" /><br /><br />
+        <input type="button" id="btn" value="Submit" onclick="table()" />
+    </form>
+</body>
+</html>
