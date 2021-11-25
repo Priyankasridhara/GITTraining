@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Document</title>
+ </head>
+ <body style="background-color:Orange;">
+	<center><H1>Welcome to my HTML Tutorial</H1></center><br>
+	<A HREF="#Intro">Introduction</A><BR>
+	<A HREF="#Bio">Bio</A><BR>
+	<A HREF="#Intrests"> Intrests </A><BR>
+	<A HREF="#Hobbies"> Hobbies </A><BR>
+	<A HREF="#Goals"> Goals </A><BR>
+	<hr>. . . Lots of text here . . .
+	<p><A NAME="intro"></A><HR>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+Introduction: This document contains a short tutorial on how to write HTML. ...<br>
+
+</P>
+
+	<p style="background-color:orange;"> <a name="Bio"></a>
+	<h2><b><ins> Bio </ins></b></h2>
+		<b style="font-family:verdana;">Name : </b> Nani <br><br>
+		<b style="font-family:verdana;">Age : </b> 23 <br><br>
+		<b style="font-family:verdana;">Phone Number : </b> 910023 <br><br>
+		<b style="font-family:verdana;">Village : </b> AVT <br><br>
+		<b style="font-family:verdana;">District : </b> Egdt <br><br>
+		<b style="font-family:verdana;">pincode : </b> 533253 <br><br>
+	</p>
+	<p style="background-color:orange;"> <a name="Intrests"></a>
+		<h2><b><ins> Intrests </ins></b></h2>
+		<b style="font-family:verdana;">Food : </b> Biryani <br><br>
+		<b style="font-family:verdana;">Travell : </b> out states <br><br>
+		<b style="font-family:verdana;">driving : </b> more intrested <br><br>
+	</p>
+	<p style="background-color:orange;"> <a name="Hobbies"></a>
+		<h2><b><ins> Hobbies </ins></b></h2>
+		<b style="font-family:verdana;">Hobbie 1 : </b> Travelling <br><br>
+		<b style="font-family:verdana;">Hobbie 1 : </b> Music <br><br>
+		<b style="font-family:verdana;">Hobbie 1 : </b> Travelling <br><br>
+		<b style="font-family:verdana;">Hobbie 1 : </b> Riding <br><br>
+		<b style="font-family:verdana;">Hobbie 1 : </b> Foods <br><br>
+	</p>
+	<p style="background-color:orange;"> <a name="Goals"></a>
+		<h2><b><ins> Goals </ins></b></h2>
+		<b style="font-family:verdana;"> Short Term : </b> Become a software employee <br><br>
+		<b style="font-family:verdana;"> Long Term : </b> Acheive a good position where i can build my carrier <br><br>
+	</p>
+
+ </body>
+</html>

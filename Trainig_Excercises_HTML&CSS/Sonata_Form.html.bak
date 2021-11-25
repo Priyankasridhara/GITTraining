@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Document</title>
+ </head>
+ <body style="background-color:pink">
+ <fieldset>
+ 		<center><h1 style="font-family:Times New Roman;font-size:150;"> Enter Your Details </h1></center><br><br>
+	<form>
+		Employee ID : <input type="text" pattern = "[a-z]{1,15}" title = "Should Enter lowe case and 1 to 15 numbers only"><br><br>
+	</form>
+	<form>
+		Employee Name : <input type="text" pattern = "[a-z][A-Z]" title = "Should Enter lowe case and Uppercase only"><br><br>
+	</form>
+	<form>
+		Contact No : <input type="text" size=10 maxlength=10 pattern = "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" title = "Should Enter 0 to 9 numbers only"><br><br>
+	</form>	
+	<form>
+		Email : <input type="email"><br><br>
+	</form>	
+	<form>
+		Technology : <input type="text" pattern = "[a-z][A-Z]" title = "Should Enter lowe case and Uppercase only"><br><br>
+	</form>
+	<form>
+		Course : <select name="Course" ><option>
+		<option value=1 selected = "true">Bsc
+		<option value=2 >Btech
+		<option value=3 >MCA
+		<option value=4 >MTECH
+		<option value=5 >Degree
+		</select><br><br>
+	</form>
+	<form>
+		Prefered Dates : <input type="date" max="2021-01-01" min="2010-01-01"><br><br>
+	</form>
+	<form>
+		Start Date : <input type="date"><br><br>
+	</form>
+	<form>
+		End Date : <input type="date"><br><br>
+	</form>
+	Stream : <input type="checkbox" name="IT">IT
+	<input type="checkbox" name="Non-IT">NON-IT<BR><BR>
+	
+	Gender : <input type = "radio" name="Male" value=1>Male
+	<input type ="radio" name="Female" value=2>Female<br><br>
+<form action="Destination.html" method="GET">	
+	<input type="submit" value="submit">
+</form>
+</fieldset>
+ </body>
+</html>

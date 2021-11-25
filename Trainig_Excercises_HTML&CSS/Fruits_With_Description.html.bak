@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Document</title>
+ </head>
+ <body style="background-color:pink;">
+ 	<center><b style="font-family:Times New Roman;"><h1><ins>LIST OF FRUITS WITH DISCRIPTION</ins></h1></b></center>
+	<ol type=1>
+	<dl>
+		<li><dt><b><ins>Orange :</ins></b></dt>
+			<dd>The most indispensable fruit of the winter months is orange for me. </dd><br>
+		</li>
+
+		<li><dt><b><ins>Apple :</ins></b></dt>
+			<dd>Apple is such a useful food that we can use it in almost every area. </dd><br>
+		</li>
+
+		<li><dt><b><ins>Peach :</ins></b></dt>
+			<dd>I can’t eat peach because of its cotton texture, so I always peel the skin before eating. </dd><br>
+		</li>
+
+		<li><dt><b><ins>Watermelon :</ins></b></dt>
+			<dd>Watermelon is normally a round fruit, but in Japan, watermelons started to be produced as square. </dd><br>
+		</li>
+
+		<li><dt><b><ins>Cucumber :</ins></b></dt>
+			<dd>I love eating cucumber, but I also use it to make my skin beautiful. </dd><br>
+		</li>
+
+		<li><dt><b><ins>Pumpkin :</ins></b></dt>
+			<dd> A variety of decorative products are made from pumpkin at Halloween. </dd>
+		</li>
+	</dl>
+	</ol>
+ </body>
+</html>
