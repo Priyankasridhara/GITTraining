@@ -1,0 +1,182 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>CBT based training</title>
+<style>
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+input {
+  width: 100%;
+}
+h1 {text-align: center;}
+Body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffe6e6;
+}
+
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+input[type=text],input[type=number],input[type=email],input[type=checkbox],input[type=date]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border:none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 25%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+<form action="http://google.co.in">
+<!-- If we remove this, every thing will move to the left of the page-->
+<div align="center">
+
+  <a href="https://www.sonata-software.com/"><img src="C:\Users\priyanka.sridhara\Downloads\sonatasoftware-300x162.png" alt="sonata"
+ style="width:500px;height:200px"></A><BR>
+  
+
+<!--Adds a heading to the form-->
+</div>
+<fieldset>
+<h1>Employee CBT based training form</h1>
+<label for="Employee ID">
+        <span>Employee ID: </span>
+        <strong><abbr title="required">*</abbr></strong>
+        <!-- Input type text for small texts, specify size -->
+        <input type="number" name="Employee ID" size=35 maxlength=35 value="" required>
+      </label>
+
+</br></br>
+ <label for="Employee Name">
+        <span>Employee Name: </span>
+        <strong><abbr title="required">*</abbr></strong>
+        <!-- Input type text for small texts, specify size -->
+        <input type="text" name="Employee Name" size=35 maxlength=35 value=""required>
+        
+      </label>
+
+</br></br>
+ <label for="Contact number">
+        <span>Contact number: </span>
+        <strong><abbr title="required">*</abbr></strong>
+        <!-- Input type text for small texts, specify size -->
+        <input type="tel" name="Contact Number" size=35 maxlength=35 value=""required> 
+      </label>
+
+</br></br>
+ <label for="Email">
+        <span>Email address: </span>
+        <strong><abbr title="required">*</abbr></strong>
+        <!-- Input type text for small texts, specify size -->
+        <input type="email" name="Email address" size=35 maxlength=35 value=""required>
+        
+      </label>
+
+</br></br>
+ 
+
+<label for="Technology:">
+        <span>Email Technology: </span>
+        <strong><abbr title="required">*</abbr></strong>
+<p>
+<!--Checkbox lets you select multiple options -->
+<input type="checkbox" name="AI">Artificial Intelligence
+<input type="checkbox" name="RPA">Robotic process auto mation
+<input type="checkbox" name="IOT">Internet of things
+<input type="checkbox" name="Dev ops">Devops
+</p>
+<label for="Course:">
+        <span>Course: </span>
+        <strong><abbr title="required">*</abbr></strong>
+        <textarea name="Course" cols=30 rows=4></textarea> </br> </br>
+        </label>
+<!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+<label for="Preferred date:">
+        <span>preffered date: </span>
+        <strong><abbr title="required">*</abbr></strong>
+
+Preferred Dates:
+<select name="datepref" ><option>
+<option value=1 selected = "true">15-11-2021
+<option value=2 >22-11-2021
+<option value=3 >29-11-2021
+<option value=4 >06-12-2021
+</select>
+</br></br>
+</label>
+Start Date:
+<input type="date" name="Date" size=35 maxlength=35 value="" required>
+</br></br>
+End Date:
+<input type="date" name="Date" size=35 maxlength=35 value="" required>
+</br></br>
+<div align="center">Other facilities?</div>
+<input type="text" name="facilities" size=35 maxlength=35 value="" required>
+<p>
+<!--Checkbox lets you select multiple options -->
+<input type="checkbox" name="Books">Internet
+<input type="checkbox" name="Web">Laptop
+<input type="checkbox" name="Phone">Network connectivity
+<input type="checkbox" name="WFH">Work from Home
+</p>
+<div align="center">Was able to do Virtual Lab?
+<!-- Radio buttons help you choose one out of the many values -->
+<input type="radio" name="vir" value=1>Yes
+<input type="radio" name="vir" value=2>No
+</p>
+<div align="center">Can take Online quiz?
+<!-- Radio buttons help you choose one out of the many values -->
+<input type="radio" name="exe" value=1>Yes
+<input type="radio" name="exe" value=2>No
+</p>
+Need Online Instructor(To clarify doubts)?:
+<input type="radio" name="ins" value=1>Yes
+<input type="radio" name="ins" value=2>No
+</fieldset>
+</br></br>
+</div>
+
+<!--submits the information entered in the form by the user -->
+<input  type=submit value="Submit form">
+
+</form>
+</body>
+</html>
