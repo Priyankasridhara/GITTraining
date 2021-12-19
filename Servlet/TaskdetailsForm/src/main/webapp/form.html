@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="form.jsp">
+ Name:<input type="text" name="name"/>
+ <br/><br/>
+ 
+  Choose the task :
+  <select name="task">
+  <option>Java core</option>
+  <option>JDBC</option>
+  <option>Hibernate</option>
+  <option>Servlet</option>
+  <option>JSP</option>
+  </select>
+  <br/><br/>
+  Choose multiple task:
+  <br/>
+  <input type="checkbox" name="mtask" value="Java Core"> Java Core
+  <br/>
+  <input type="checkbox" name="mtask" value="JDBC"> JDBC
+  <br/>
+  <input type="checkbox" name="mtask" value="Hibernate"> Hibernate
+ <br/>
+ 
+  <input type="checkbox" name="mtask" value="servlet">servlet
+  <br/>
+  <input type="checkbox" name="mtask" value="JSP">JSP
+  <br/>
+  <input type="checkbox" name="mtask" value="Spring"> Spring
+
+  <br/><br/>
+  Priority:
+  <br/>
+  <input type="radio" name="priority" value="High"> High
+  <br/>
+  <input type="radio" name="priority" value="Medium"> Medium 
+  <br/>
+  <input type="radio" name="priority" value="Low"> Low
+ <br/><br/>
+BookMark:
+<br/>
+<input type="radio" name="bm" value="bookmarked">bookmarked
+ <br/>
+  <input type="radio" name="bm" value="not bookmarked">not bookmarked
+   <br/><br/>
+ Task notes:<br><input type="text" name="tasknotes"><br>
+<br/>
+ownerid:<br><input type="text" name="ownerid"><br>
+<br/>
+created on:<br><input type="Date" name="createdon"><br>
+<br/>
+Modified on:<br><input type="Date" name="Modifiedon"><br>
+ <br/>
+ <input type="submit" value="Submit"/>
+ </form>
+</body>
+</html>
