@@ -1,0 +1,29 @@
+1)  db.restaurants.find().pretty()
+
+2) db.restaurants.find({},{name:1,brough:1,cuisine:1,restaurant_id:1}).pretty()
+
+3) db.restaurants.find({},{name:1,brough:1,cuisine:1,restaurant_id:1,_id:0}).pretty()
+
+4) db.restaurants.find({},{"address.zipcode":1, _id:0,name:1,restaurant_id:1}).pretty()
+
+5) db.restaurants.find({borough:"Bronx"}).pretty()
+
+6) db.restaurants.find().skip(0).limit(5).pretty()
+
+7) db.restaurants.find().skip(5).limit(5).pretty()
+
+8) db.restaurants.find( {"grades.score" : {$gt: 90}}).pretty()
+
+9) db.restaurants.find( {"grades.score" : {$gt: 80,$lt: 100}}).pretty()
+
+10) db.restaurants.find( {"address.coord.0": {  $lt: -95.754168 } } )
+
+11) db.restaurants.find({  "grades.score":{$gt:70},"address.coord.0":{$lt:-65.754168},cuisine:{$ne:"American"} }).pretty()
+
+12) db.restaurants.find({  "grades.score":{$gt:70},"address.coord.0":{$lt:-65.754168},cuisine:{$ne:"American"} }).pretty()
+
+13) db.restaurants.find({  "grades.grade":"A",borough:{$ne:"Brooklyn"},cuisine:{$ne:"American"} }).sort({"cuisine":1}).pretty()
+
+14) db.restaurants.find({"name":{$regex:/^Wil/}},{restaurant_id:1,name:1,borough:1,cuisine:1})
+
+15) db.restaurants.find({"name":{$regex:/ces$/}},{restaurant_id:1,name:1,borough:1,cuisine:1})
