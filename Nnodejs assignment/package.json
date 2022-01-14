@@ -1,15 +1,14 @@
 {
-  "name": "sonata",
+  "name": "nodeexpress",
   "version": "1.0.0",
-  "description": "demo",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "index"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "priyanka",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2",
-    "nodeman": "^1.1.2"
+    "express": "^4.17.2"
   }
 }
