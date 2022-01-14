@@ -1,0 +1,12 @@
+export class Employee{
+empCode:nimber;
+empName:string;
+
+constructor(code:number,name:string){
+this.empName=name;
+this.empCode=code;
+}
+display=() =>{console.log(this.empcode+''+ this.empName)}
+}
+let emp=new Employee(1,'Ram');
+emp.display();
