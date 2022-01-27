@@ -1,0 +1,25 @@
+﻿<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" routerLink="/admin" *ngIf="isAdmin">Admin</a>
+        
+        <a class="nav-item nav-link"  routerLink="/add" *ngIf="isAdmin"> Task</a>
+        <a class="nav-item nav-link" routerLink="/tasks" *ngIf="isAdmin">Task Details</a>
+        <a class="nav-item nav-link" routerLink="/users" *ngIf="isAdmin">Users</a>
+        <a class="nav-item nav-link"  routerLink="/adduser" *ngIf="isAdmin"> Manage User</a>
+        <a class="nav-item nav-link"  routerLink="/update/:id/status" routerLinkActive="active">Update status by user</a>
+        <a class="nav-item nav-link" routerLink="/tasks" routerLinkActive="active">Task Details by owner id
+        </a>
+        
+        
+        
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div>
+</nav>
+
+<!-- main app container -->
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
